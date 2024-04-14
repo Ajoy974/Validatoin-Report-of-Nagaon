@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validators of Nagaon</title>
+    <meta name="author" content="Ajoy Das">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <!-- google chart -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body translate="no">
+    <section id="sideNav">
+        <!-- side navbar -->
+        <div class="title">
+            <i class="bi-bar-chart"></i>
+            <h1>Validation</h1>
+        </div>
+        <hr>
+        <div class="list">
+            <li class="items" title="Go to Dashboard page"><i class="bi bi-pie-chart"></i>Dashboard</li>
+            <li class="items" title="See to History"><i class="bi bi-clock-history"></i>History</li>
+            <li class="items" title="Go to Membors page"><i class="bi bi-people"></i>Membors</li>
+            <li class="items" title="Go to Download page"><i class="bi bi-download"></i>Download</li>
+            <li class="items" title="Go to Help page"><i class="bi bi-question-circle"></i>Help</li>
+        </div>
+        <div class="setting">
+            <button title="Setting Ctrl+I" onclick="showPopUp()" style="color: black;">setting</button>
+        </div>
+    </section>
+    <div id="popup">
+        <div id="secondDiv">
+            <h2>Additional Requirements</h2>
+            <div class="dropdown" id="colorPates">
+                <p>Color Palette Options:</p>
+                <div class="dropdown-select" onclick="toggleDropdown('colorPates')">Select option</div>
+                <div class="dropdown-options" id="colorPatesOptions">
+                    <div class="option">Color palette selection</div>
+                    <div class="option">Custom color options</div>
+                    <div class="option">Color opacity settings</div>
+                </div>
+            </div>
+            <div class="dropdown" id="font_family">
+                <p>Font Family Options:</p>
+                <div class="dropdown-select" onclick="toggleDropdown('font_family')">Select option</div>
+                <div class="dropdown-options" id="font_familyOptions">
+                    <div class="option">Font family selection</div>
+                    <div class="option">Custom font upload</div>
+                    <div class="option">Font size options</div>
+                </div>
+            </div>
+            <div class="dropdown" id="font_color">
+                <p>Font Color Options:</p>
+                <div class="dropdown-select" onclick="toggleDropdown('font_color')">Select option</div>
+                <div class="dropdown-options" id="font_colorOptions">
+                    <div class="option">Font color selection</div>
+                    <div class="option">Text shadow options</div>
+                    <div class="option">Highlight color customization</div>
+                </div>
+            </div>
+            <div class="dropdown" id="hide_header">
+                <p>Header Options:</p>
+                <div class="dropdown-select" onclick="toggleDropdown('hide_header')">Select option</div>
+                <div class="dropdown-options" id="hide_headerOptions">
+                    <div class="option">Hide header option</div>
+                    <div class="option">Toggle header visibility</div>
+                    <div class="option">Header background customization</div>
+                </div>
+            </div>
+            <button onclick="closepop()">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- main section -->
+    <section class="main">
+        <header>
+            <div class="menu" onclick="opensidebar()">
+                <i class="bi-list"></i>
+            </div>
+            <div class="search">
+                <i class="bi-search"></i>
+                <input type="text" name="text" id="text" placeholder="Search">
+            </div>
+            <div class="date"><span><small>13-04-2024</small></span></div>
+            <div class="profile">
+                <i class="bi-bell"></i>
+                <img src="images/backgrounds.jpg" alt="" id="person">
+            </div>
+        </header>
+        <div class="i-name" style="margin: 70px 0  0 30px !important;">
+            <h1>Dashboard</h1>
+        </div>
+        <!-- header section is closed 😁 -->
+        <div class="boxes">
+            <div class="box-items">
+                <i class="bi-pass"></i>
+                <div class="info">
+                    <h3>Total Approved</h3>
+                    <span id="ard">256</span>
+                </div>
+            </div>
+            <div class="box-items">
+                <i class="bi-file-break"></i>
+                <div class="info">
+                    <h3>Total Rejected</h3>
+                    <span id="rej">256</span>
+                </div>
+            </div>
+            <div class="box-items">
+                <i class="bi-door-open"></i>
+                <div class="info">
+                    <h3>Total Pending</h3>
+                    <span id="pen">256</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart">
+            <div id="demo"></div>
+            <div id="demo-2"></div>
+        </div>
+        <!-- table staring below -->
+        <div class="table-1">
+        <table id="my_table" contenteditable="true" spellcheck="false">
+            <tr>
+                <th>Name</th>
+                <th>Desingnation</th>
+                <th>Approved</th>
+                <th>Rejected</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Ajoy Das</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Santu Das</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Raj Kumar Bera</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Dipankar Nath</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Jyotirmoy Hazorika</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Noku Moni Borah</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Rahima Begam</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Nilutpal Borah</td>
+                    <td>Validators</td>
+                    <td>265</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <button onclick="exportToCSV('my_table', 'export.csv')" id="btn">Download</button>
+
+    </section>
+    <script src="main.js"></script>
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownOptions = document.getElementById(dropdownId + 'Options');
+            dropdownOptions.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
