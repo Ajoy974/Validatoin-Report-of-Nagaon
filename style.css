@@ -50,7 +50,7 @@ body {
   body #sideNav {
     width: 300px;
     height: 90vh;
-    background: rgba(70, 75, 97,.1);
+    background: rgba(70, 75, 97);
     color: #fff;
     position: fixed;
     backdrop-filter:blur(10px);
